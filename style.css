@@ -1,0 +1,31 @@
+header {
+    height: 10%; 
+    padding-left: 15%;
+    padding-right: 15%;   
+    align-items: center; 
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header li{
+    margin: 20px;
+}
+
+ul.nav-derecha {
+    padding-left: 60%;
+    display: flex;
+    float: right;
+}
+
+.body{
+    background-color: blue;
+}
