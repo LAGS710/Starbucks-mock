@@ -1,3 +1,10 @@
+body ul{
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    letter-spacing: .01em;
+}
+
 header {
     height: 10%; 
     padding-left: 15%;
@@ -13,7 +20,6 @@ nav{
 
 header ul{
     display: flex;
-    list-style: none;
 }
 
 header li{
@@ -150,7 +156,8 @@ p{
 .containerhorizontal{
     display: flex;
     flex-direction: row;
-    height: auto
+    height: auto;
+    margin-bottom: 2%;
 }
 
 .containerhorizontalazul{
@@ -182,4 +189,27 @@ p{
 
 #horizontalrojo{
     color: #d50032;
+}
+
+footer{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footersuperior{
+    display: flex;
+    flex-direction: row;
+    padding: 5%, 0, 5%, 0;
+}
+
+.footersuperior li{
+    color: #777;
+}
+
+.footersuperior h2{
+    color: black;
+}
+
+.footersuperior li, h2{
+    padding-bottom: 10%;
 }
