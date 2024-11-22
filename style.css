@@ -146,3 +146,40 @@ p{
     text-align: center;
     padding-top: 5%;
 }
+
+.containerhorizontal{
+    display: flex;
+    flex-direction: row;
+    height: auto
+}
+
+.containerhorizontalazul{
+    background-color: #98cde4;
+}
+
+.containerhorizontalrojo{
+    background-color: #f6bfd9;
+}
+
+.containerhorizontal p{
+    text-align: center;
+    padding:15%;
+}
+
+#cartahorizontal{
+    height:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+#espacio{
+    width:2%;
+}
+
+#horizontalazul{
+    color: #003b49;
+}
+
+#horizontalrojo{
+    color: #d50032;
+}
