@@ -1,21 +1,47 @@
-body ul{
-    list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     letter-spacing: .01em;
 }
 
+body  ul{
+    list-style: none;
+}
+
+body a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    background: none;
+    display: inline;
+    border-radius: 50px;
+    border: 1px solid;
+    font-weight: 600;
+    padding: 7px 16px;
+}
+
 header {
-    height: 10%; 
+    height: auto; 
     padding-left: 15%;
     padding-right: 15%;   
     align-items: center; 
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
 }
 
 nav{
     display: flex;
     flex-direction: row;
     width: auto;
+    align-items: center;
+}
+
+nav img{
+    width: 50px;
+    height: 50px;
 }
 
 header ul{
@@ -24,12 +50,38 @@ header ul{
 
 header li{
     margin: 20px;
+    font-size: .875rem;
+    letter-spacing: .1em;
 }
 
 ul.nav-derecha {
-    padding-left: 60%;
+    padding-left: 30%;
     display: flex;
-    float: right;
+    align-items: center;
+}
+
+.nav-izquierda li{
+    font-weight: 700;
+    border: 0px;
+}
+
+.nav-derecha li{
+    font-weight: 600;
+    display: flex;
+    white-space: nowrap;
+}
+
+.nav-derecha img{
+    height: 22px;
+    width: auto;
+}
+
+#btnUnir button{
+    background-color: black;
+}
+
+#btnUnir a{
+    color: white;
 }
 
 .contenido-container{
@@ -38,7 +90,14 @@ ul.nav-derecha {
     display: flex;
     flex-direction: column;
     list-style: bold;
-    border-bottom: 1px solid rgb(233, 232, 232);
+}
+
+.contenido-container p{
+    line-height: 1.75;
+    font-size: 1.188rem;
+    font-weight: 500;
+    color: #fff;
+
 }
 
 img{
@@ -46,16 +105,10 @@ img{
     height: auto;
 }
 
-
 h1{
     color: #fff;
     text-transform: uppercase;
     font-size: 1.875rem;
-}
-
-p{
-    color: #fff;
-    font-size: 1.188rem;
 }
 
 .carta1{
@@ -74,7 +127,7 @@ p{
 #contenido1{
     width: 50%;
     text-align: center;
-    padding-top: 5%;
+    justify-content: center;
 }
 
 .carta2{
@@ -93,7 +146,6 @@ p{
 #contenido2{
     width: 50%;
     text-align: center;
-    padding-top: 5%;
 }
 
 .carta3{
@@ -113,7 +165,6 @@ p{
 #contenido3{
     width: 50%;
     text-align: center;
-    padding-top: 5%;
 }
 
 .carta4{
@@ -133,7 +184,6 @@ p{
 #contenido4{
     width: 50%;
     text-align: center;
-    padding-top: 5%;
 }
 
 .carta5{
@@ -152,13 +202,20 @@ p{
 #contenido5{
     width: 50%;
     text-align: center;
-    padding-top: 5%;
+}
+
+#contenido5 a{
+    color: white;
+}
+
+#contenido5 button{
+    border-color: white;
 }
 
 .containerhorizontal{
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: auto
     margin-bottom: 2%;
 }
 
@@ -181,6 +238,22 @@ p{
     flex-direction:column;
 }
 
+.containerhorizontalrojo button{
+    border-color: #d50032;
+}
+
+.containerhorizontalrojo a{
+    color: #d50032;
+}
+
+.containerhorizontalazul button{
+    border-color:#003b49;
+}
+
+.containerhorizontalazul a{
+    color: #003b49;
+}
+
 #espacio{
     width:2%;
 }
@@ -196,7 +269,7 @@ p{
 footer{
     padding-left: 15%;
     padding-right: 15%;
-    border-top: red;
+    box-shadow: 0 -3px 3px rgba(0,0,0,.1);
 }
 
 .footersuperior{
