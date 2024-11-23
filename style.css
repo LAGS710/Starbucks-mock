@@ -37,6 +37,8 @@ ul.nav-derecha {
     padding-right: 10%; 
     display: flex;
     flex-direction: column;
+    list-style: bold;
+    border-bottom: 1px solid rgb(233, 232, 232);
 }
 
 img{
@@ -194,22 +196,77 @@ p{
 footer{
     padding-left: 15%;
     padding-right: 15%;
+    border-top: red;
 }
 
 .footersuperior{
     display: flex;
     flex-direction: row;
-    padding: 5%, 0, 5%, 0;
+    border-bottom: 1px solid rgb(233, 232, 232);
 }
 
 .footersuperior li{
     color: #777;
 }
 
-.footersuperior h2{
+.footersuperior h3{
     color: black;
+    font-weight: 400;
 }
 
-.footersuperior li, h2{
+.footersuperior li, h3{
     padding-bottom: 10%;
 }
+
+.iconos img{
+    height: 34px;
+    width: auto;
+}
+
+.iconos ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.iconos li{
+    padding:1%;
+}
+
+.menufooter{
+    height: auto;
+    width: 100%;
+}
+.menufooter ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #999;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 300;   
+    justify-content: center;
+}
+
+.menufooter li{
+    padding-right: 1%;
+}
+
+#derechosreservados{
+    font-size: 1rem;
+    color: #999;
+    text-align: center;
+    font-weight: 300;  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0px;
+}
+
+#permiso{
+    font-size: .625rem;
+    color: #999;
+    text-align: center;
+    font-weight: 300;  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0px;
+}
+
