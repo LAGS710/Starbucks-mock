@@ -65,6 +65,13 @@ ul.nav-derecha {
     border: 0px;
 }
 
+.nav-izquierda li:hover{
+    border-bottom: #3b806d solid;
+}.nav-izquierda a:hover{
+    color: #3b806d;
+}
+
+
 .nav-derecha li{
     font-weight: 600;
     display: flex;
@@ -78,6 +85,10 @@ ul.nav-derecha {
 
 #btnUnir button{
     background-color: black;
+}
+
+#btnUnir button:hover{
+    background-color: rgba(0, 0, 0, 0.753);
 }
 
 #btnUnir a{
@@ -278,8 +289,12 @@ footer{
     border-bottom: 1px solid rgb(233, 232, 232);
 }
 
-.footersuperior li{
+.footersuperior a{
     color: #777;
+}
+
+.footersuperior a:hover{
+    color: black;
 }
 
 .footersuperior h3{
@@ -302,6 +317,10 @@ footer{
     justify-content: center;
 }
 
+.iconos li:hover{
+    padding-top: 8px;
+}
+
 .iconos li{
     padding:1%;
 }
@@ -319,6 +338,14 @@ footer{
     font-size: 1rem;
     font-weight: 300;   
     justify-content: center;
+}
+
+.menufooter a{
+    color: #999;
+}
+
+.menufooter a:hover{
+    color: black;
 }
 
 .menufooter li{
