@@ -26,8 +26,8 @@ button{
 
 header {
     height: auto; 
-    padding-left: 15%;
-    padding-right: 15%;   
+    padding-left: 18%;
+    padding-right: 16%;   
     align-items: center; 
     box-shadow: 0 3px 3px rgba(0,0,0,.1);
 }
@@ -40,8 +40,8 @@ nav{
 }
 
 nav img{
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
 }
 
 header ul{
@@ -55,13 +55,14 @@ header li{
 }
 
 ul.nav-derecha {
-    padding-left: 30%;
-    display: flex;
     align-items: center;
+    margin-left: 41%;
 }
 
 .nav-izquierda li{
     font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: .1em;
     border: 0px;
 }
 
@@ -75,7 +76,9 @@ ul.nav-derecha {
 .nav-derecha li{
     font-weight: 600;
     display: flex;
-    white-space: nowrap;
+    letter-spacing: 0;
+    font-size: 1.3em;
+    align-items: center;
 }
 
 .nav-derecha img{
@@ -93,11 +96,17 @@ ul.nav-derecha {
 
 #btnUnir a{
     color: white;
+    font-size: 1.5em;
 }
 
+#btnIngresar a{
+    font-size: 1.5em;
+}
+
+
 .contenido-container{
-    padding-left: 10%;
-    padding-right: 10%; 
+    padding-left: 13%;
+    padding-right: 13%; 
     display: flex;
     flex-direction: column;
     list-style: bold;
@@ -105,9 +114,10 @@ ul.nav-derecha {
 
 .contenido-container p{
     line-height: 1.75;
-    font-size: 1.188rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
+
 
 }
 
@@ -119,7 +129,7 @@ img{
 h1{
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.875rem;
+    font-size: 2.3rem;
 }
 
 .carta1{
@@ -138,7 +148,6 @@ h1{
 #contenido1{
     width: 50%;
     text-align: center;
-    justify-content: center;
 }
 
 .carta2{
