@@ -139,9 +139,49 @@ button a{
 }
 
 .container-fixed{
+    padding-top: 15%;
     width: 41%;
     position: fixed;
     height: 100vh;
+    justify-items: center;
+    color: white;
+    font-size: 45px;
+    background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);background-size: contain;
+}   
+
+.container-fixed img{
+    width: auto;
+    height: 140px;
+}
+
+.container-mano img{
+    height: auto;
+    width: 43%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+
+.container-fixed button{
+    margin: 0px 30px;
+}
+
+#fixedbuttonInicia{
+    border: 1px solid white;
+}
+
+#fixedbuttonInicia a{
+    color: white;
+}
+
+#fixedbuttonUnir{
+    border: 1px solid white;
+    background-color: white;
+}
+
+#fixedbuttonUnir a{
+    color: black;
 }
 
 .container-scroll{
