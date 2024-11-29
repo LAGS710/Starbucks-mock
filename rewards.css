@@ -2,18 +2,31 @@ html{
     width: 100%;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 body a{
     list-style: none;
     text-decoration: none;
     color: black;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .container-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 15%;
-    padding-right: 17%;
+    padding-left: 19%;
+    padding-right: 20%;
     height: 120px;
     border-style: solid;
 }
@@ -33,6 +46,7 @@ body a{
 
 .container-nav a{
     align-content: center;
+    margin-right: 20px;
 }
 
 .nav-derecha{
@@ -51,4 +65,58 @@ body a{
     padding-right: 10px;
     display: flex;
     flex-direction: row;
+}
+
+.container-main{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-fixed{
+    width: 41%;
+    position: fixed;
+    height: 100vh;
+}
+
+.container-scroll{
+    width: 59%;
+    margin-left: 41%;
+}
+
+.container-rewards{
+    height: 300px;
+}
+
+.container-redimir{
+    height: 300px;
+}
+
+.container-estrellas{
+    height: 300px;
+}
+
+.container-video{
+    height: 300px;
+}
+
+.container-pago{
+    height: 300px;
+}
+
+.container-aplicacion{
+    height: 300px;
+}
+
+.container-imagen{
+    height: 300px;
+}
+
+#header1{
+    display: block;
+}
+
+#main{
+    display: block;
+    height: 9000;
 }
