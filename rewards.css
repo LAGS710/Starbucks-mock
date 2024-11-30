@@ -245,13 +245,68 @@ button a{
     font-weight: 600;
 }
 
+.container-estrellas{
+    padding: 0 10%;
+    margin-bottom: 60px;
+}
+
 .container-estrellas #titulo{
-    font-weight: 600;
-    margin-top: 3%;
+    font-weight:600;
+    margin-top:3%;
+}
+
+.flex-estrellas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-estrellas div{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    background-color: #006341;
+    border-radius: 30px;
+    width:40px;
+    height:40px;
+    position: relative;
+    top: 50px;
+    left: -10px;
+    align-items: center;
+}
+
+.container-izquierda-estrellas{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-izquierda-estrellas img{
+    padding: 0;
+    margin: 0;
+    width: 160px;    
+    display: flex;
+}
+
+.container-izquierda-estrellas p{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#imagen2 img{
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    display: flex;
+}
+
+.container-izquierda-estrellas section{
+    width: auto;
 }
 
 .container-video{
-    height: 300px;
+    width: 100%;
 }
 
 .container-pago{
