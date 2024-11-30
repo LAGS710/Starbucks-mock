@@ -310,8 +310,33 @@ button a{
 }
 
 .container-pago{
-    height: 300px;
+    height: 1800px;
+    padding: 0 10%;
 }
+
+.flex-pago{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+}
+
+#flex-pagocontainer img{
+    height: 120px;
+    width: auto;
+}
+
+#flex-section{
+    display: flex;
+    flex-direction: row;
+}
+
+#flex-section img{
+    width: 50px;
+    height: 38.8px;
+}
+
+
 
 .container-aplicacion{
     height: 300px;
