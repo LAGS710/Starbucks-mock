@@ -139,7 +139,7 @@ button a{
 }
 
 .container-fixed{
-    padding-top: 12%;
+    padding-top: 16%;
     width: 42%;
     position: fixed;
     height: 100vh;
@@ -151,7 +151,13 @@ button a{
 
 .container-fixed img{
     width: auto;
-    height: 140px;
+    height: 105px;
+}
+
+#fixedtexto{
+    font-size: 35px;
+    width: 400px;
+    text-align: center;
 }
 
 .container-mano img{
