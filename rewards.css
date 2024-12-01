@@ -20,7 +20,7 @@ button{
     border-radius: 50px;
     border: 1px solid;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 html{
@@ -43,11 +43,11 @@ header{
     width: 100%;
     background-color: white;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 button a{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .container-nav{
@@ -56,12 +56,12 @@ button a{
     justify-content: space-between;
     padding-left: 17.5%;
     padding-right: 17.5%;
-    height: 120px;
+    height: 100px;
 }
 
 .nav-izquierda img{
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     margin-right: 30px;
 }
 
@@ -133,14 +133,14 @@ button a{
 }
 
 .container-main{
-    margin-top: 120px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
 }
 
 .container-fixed{
-    padding-top: 15%;
-    width: 41%;
+    padding-top: 12%;
+    width: 42%;
     position: fixed;
     height: 100vh;
     justify-items: center;
@@ -164,7 +164,7 @@ button a{
 }
 
 .container-fixed button{
-    margin: 0px 30px;
+    margin: 30px 30px;
 }
 
 #fixedbuttonInicia{
@@ -185,8 +185,8 @@ button a{
 }
 
 .container-scroll{
-    width: 59%;
-    margin-left: 41%;
+    width: 58%;
+    margin-left: 42%;
 }
 
 .container-scroll section{
@@ -195,30 +195,34 @@ button a{
 }
 
 #titulo{
-    font-size: 30px;
+    font-size: 23px;
+    margin-bottom: 20px;
 }
 
 #subtitulo{
-    font-size: 27px;
+    font-size: 22px;
+}
+
+.inferiorcontainer-rewards{
+    margin-top: 80px;
 }
 
 .imagenes-section{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-content: space-evenly;
     width: 25%;
-    margin-bottom: 10%;
-    margin-top: 5%;
+    margin: 0 10px;
 }
 
 .imagenes-section img{
     height: auto;
     width: 200px;
+    padding: 10px;
 }
 
 .container-subsection{
-    font-size: 24px;
+    font-size: 17px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -226,23 +230,30 @@ button a{
 }
 
 .container-rewards{
-    padding: 5% 12%;
+    padding: 5% 14%;
     display: flex;
     flex-direction: row;
 }
 
 .container-redimir{
     background: rgb(241, 240, 235);
-    padding: 5% 0;
+    padding: 5%;
+}
+
+.container-redimir #titulo{
+    padding: 0 25%;
 }
 
 .container-redimir img{
-    padding: 2% 0;
+    width: 600px;
+    height: auto;
+    margin: 3% 0;
 }
 
 .container-redimir p{
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 600;
+    text-align: center;
 }
 
 .container-estrellas{
@@ -262,17 +273,18 @@ button a{
 }
 
 .flex-estrellas div{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     color: white;
-    background-color: #006341;
+    background-color: #025034;
     border-radius: 30px;
-    width:40px;
-    height:40px;
+    width:30px;
+    height:30px;
     position: relative;
-    top: 50px;
-    left: -10px;
+    top: 30px;
+    left: -18px;
     align-items: center;
+    z-index: -1;
 }
 
 .container-izquierda-estrellas{
@@ -283,12 +295,23 @@ button a{
 .container-izquierda-estrellas img{
     padding: 0;
     margin: 0;
-    width: 160px;    
+    width: 120px;    
     display: flex;
 }
 
+.container-estrellas #titulo{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.container-estrellas #subtitulo{
+    font-size: 19px;
+    font-weight: 500;
+}
+
 .container-izquierda-estrellas p{
-    font-size: 22px;
+    font-size: 15px;
+    font-weight: 500;
     display: flex;
     align-items: center;
     text-align: left;
@@ -297,7 +320,7 @@ button a{
 #imagen2 img{
     padding: 0;
     margin: 0;
-    width: 350px;
+    width: 260px;
     display: flex;
 }
 
@@ -305,13 +328,47 @@ button a{
     width: auto;
 }
 
+#container-chica img{
+    width: 350px;
+    height: auto;
+}
+
 .container-video{
     width: 100%;
 }
 
 .container-pago{
-    height: 1800px;
-    padding: 0 10%;
+    padding: 5% 10%;
+    margin-top: 30px;
+    background: rgb(241, 240, 235);
+}
+
+.container-pago h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.container-pago h4{
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.container-pago h5{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container-pagoinferior p{
+    font-size: 15px;
+    font-weight: 450;
+}
+
+#cartas{
+    width: auto;
+    height: 150px
 }
 
 .flex-pago{
@@ -319,38 +376,125 @@ button a{
     flex-direction: row;
     text-align: left;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-#flex-pagocontainer img{
-    height: 120px;
+
+.flex-pago p{
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    align-content: center;
+}
+
+#imagen-celular{
+    height: 130px;
     width: auto;
+    margin-right: 17px;
 }
 
 #flex-section{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-#flex-section img{
+#flex-section #estrella{
     width: 50px;
     height: 38.8px;
 }
 
+.container-pagoinferior{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 8%;
+}
 
+.container-pagoinferior h5, p{
+    text-align: left;
+}
+
+.container-pagoinferior img{
+    width: auto;
+    height: 120px;
+}
 
 .container-aplicacion{
-    height: 300px;
+    padding: 4% 5%;
+}
+
+.container-aplicacion p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.container-aplicacion h3{
+    font-size: 22px;
+}
+
+.container-aplicacion h6{
+    font-size: 17px;
+}
+
+.container-aplicacion img{
+    width: auto;
+    height: 218px;
+    margin: 4% 2.5%;
+}
+
+#app-img{
+    width: auto;
+    height: 48px;
+}
+
+.container-conocemas{
+    padding: 5% 18%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgb(241, 240, 235);
+}
+
+.container-conocemas a{
+    color: #3a6354;
+    text-decoration: underline;
+}
+
+.container-conocemas img{
+    height: auto;
+    width: 350px;
+}
+
+.container-conocemas h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-conocemas p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container-conocemas h5, p{
+    text-align: left;
+    padding: 2%;
 }
 
 .container-imagen{
     height: 300px;
 }
 
+.starbucks-imagen img{
+    height: 230px;
+    width: auto;
+}
+
 #header1{
     display: block;
 }
-
-
 
 footer{
     border-top: 1px solid rgb(233, 229, 229);
@@ -359,7 +503,7 @@ footer{
 .footersuperior{
     display: flex;
     flex-direction: row;
-    padding: 0px 40px;
+    padding: 0px 20px;
     margin-bottom: 120px;
 }
 
@@ -372,17 +516,18 @@ footer{
 }
 
 .footersuperior h2{
-    padding: 40px 0px;
+    padding: 30px 0px;
     color: black;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .footersuperior li{
     padding-bottom: 10%;
+    text-align: left;
 }
 
 .footersuperior a{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -392,7 +537,7 @@ footer{
 
 .iconos img{
     margin: 20px 3px 0px 3px;
-    height: 44px;
+    height: 35px;
     width: auto;
 }
 
@@ -416,22 +561,19 @@ footer{
     flex-direction: row;
     text-align: center;
     color: #999;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 100;
     justify-content: center;
 }
 
 .menufooter a{
     color: #999;
-    font-weight: 350;  
+    font-weight: 250;  
 }
 
-.menufooter li{
-    padding-right: 1%;
-}
 
 #derechosreservados{
-    font-size: 1rem;
+    font-size: 10px;
     color: #999;
     text-align: center;
     font-weight: 300;  
