@@ -169,6 +169,10 @@ nav img{
     padding: 1%;
 }
 
+.alimentos-container img {
+    margin-left: 4vh;
+}
+
 .articulo img:hover{
     border: 3px #777;
 }
@@ -191,7 +195,6 @@ footer{
     padding-top: 3vh;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid rgb(233, 232, 232);
     width: 30%;
     justify-content: space-between;
 }
@@ -215,15 +218,20 @@ footer{
     padding-bottom: 14%;
 }
 
+.footerinferior{
+    border-top: 1px solid rgb(233, 232, 232);
+}
+
 .iconos img{
     height: 34px;
     width: auto;
 }
 
 .iconos{
+    margin-top: 2vh;
     width: 20%;
     justify-self: center;
-    margin-bottom: 8vh;
+    margin-bottom: 4vh;
     height: auto;
 }
 
@@ -275,3 +283,22 @@ footer{
 .menufooter li{
     padding-right: 1%;
 }
+
+#derechosreservados{
+    font-size: 1rem;
+    color: #999;
+    text-align: center;
+    font-weight: 300;  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0px;
+}
+
+#permiso{
+    font-size: .625rem;
+    color: #999;
+    text-align: center;
+    font-weight: 300;  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin-bottom: 2vh;
+}
+
