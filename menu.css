@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .01em;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body a{
+    color: black;
+}
+
+button{
+    background: none;
+    display: inline;
+    border-radius: 50px;
+    border: 1px solid;
+    font-weight: 600;
+    padding: 1% 13px;
+}
+
+header {
+    padding-left: 18%;
+    padding-right: 18%;   
+    align-items: center; 
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    height: 9vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 52px;
+    height: 52px;
+}
+
+.nav-izquierda{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-izquierda {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 23%;
+}
+
+.nav-izquierda a{
+    justify-self: flex-start;
+}
+
+.nav-izquierda li{
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1em;
+    justify-content: space-between;
+}
+
+.nav-izquierda li:hover{
+    border-bottom: #3b806d solid;
+}.nav-izquierda a:hover{
+    color: #3b806d;
+}
+
+.nav-derecha{
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    justify-content: space-between;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.nav-derecha li{
+    font-weight: 600;
+    font-size: 1.11em;
+    display: flex;
+    letter-spacing: 0;
+    align-items: center;
+}
+
+.nav-derecha img{
+    height: 22px;
+    width: auto;
+}
+
+#btnUnir button{
+    background-color: black;
+}
+
+#btnUnir button:hover{
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+#btnUnir a{
+    color: white;
+    font-size: 1.4em;
+}
+
+#btnIngresar a{
+    font-size: 1.4em;
+}
