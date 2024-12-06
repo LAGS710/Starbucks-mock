@@ -118,3 +118,160 @@ nav img{
 #btnIngresar a{
     font-size: 1.4em;
 }
+
+.principal-container{
+    padding-left: 18%;
+    padding-right: 18%; 
+}
+
+#titulo-container{
+    margin: 5vh 0;
+    width: 70vh;
+}
+
+#titulo-container h1{
+    font-size: 2em;
+}
+
+#titulo-container h1, h3{
+    margin: 0;
+    padding: 0;
+}
+
+#categoria{
+    padding: 2vh 0;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+.articulos-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.articulo{
+    margin: 3vh 5vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.articulo img{
+    height: 180px;
+    width: 180px;
+    background-color: #1e3932;
+    border-radius: 100px;
+    padding: 1%;
+}
+
+.articulo img:hover{
+    border: 3px #777;
+}
+
+.articulo p{
+    margin-top: 1vh;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer{
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+}
+
+.footersuperior{
+    margin-top: 4.5vh;
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(233, 232, 232);
+    width: 30%;
+    justify-content: space-between;
+}
+
+.footersuperior a{
+    color: #777;
+    font-weight: 500;
+}
+
+.footersuperior a:hover{
+    color: black;
+}
+
+.footersuperior h3{
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.footersuperior li, .footersuperior h3{
+    padding-bottom: 14%;
+}
+
+.iconos img{
+    height: 34px;
+    width: auto;
+}
+
+.iconos{
+    width: 20%;
+    justify-self: center;
+    margin-bottom: 8vh;
+    height: auto;
+}
+
+.iconos ul{
+   display: flex;
+   justify-content: space-between;
+   align-self: end;
+}
+
+.iconos li:hover{
+    display: flex;
+    background-color: white;
+    align-items: baseline;
+}
+
+.iconos li{
+    padding:1%;
+    height: 4.3vh;
+    display: flex;
+    align-items: end;
+}
+
+.menufooter{
+    height: auto;
+    width: 100%;
+}
+
+.menufooter a{
+    font-weight: 300;
+}
+.menufooter ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #999;
+    height: 50px;
+    font-size: 1rem; 
+    justify-content: center;
+}
+
+.menufooter a{
+    color: #999;
+}
+
+.menufooter a:hover{
+    color: black;
+}
+
+.menufooter li{
+    padding-right: 1%;
+}
