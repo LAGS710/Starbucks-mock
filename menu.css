@@ -67,12 +67,12 @@ nav img{
     font-size: 1rem;
     letter-spacing: .1em;
     justify-content: space-between;
+    align-content: center;
+    height: 8.9vh;
 }
 
 .nav-izquierda li:hover{
-    border-bottom: #3b806d solid;
-}.nav-izquierda a:hover{
-    color: #3b806d;
+    box-shadow: inset 0 -5px #006341;
 }
 
 .nav-derecha{
@@ -142,6 +142,7 @@ nav img{
     padding: 2vh 0;
     border-top: 1px solid #777;
     border-bottom: 1px solid #777;
+    font-weight: 500;
 }
 
 .articulos-container{
@@ -174,7 +175,7 @@ nav img{
 }
 
 .articulo img:hover{
-    border: 3px #777;
+    outline: solid 10px #779c92;
 }
 
 .articulo p{
