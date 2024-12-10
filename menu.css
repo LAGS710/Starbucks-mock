@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+body{
+    width: 100vw;
+}
+
 body a{
     color: black;
 }
@@ -24,8 +28,9 @@ button{
 }
 
 header {
-    padding-left: 18%;
-    padding-right: 18%;   
+    width: 1245px;
+    justify-self: center;
+    padding: 0 1%;
     align-items: center; 
     box-shadow: 0 3px 3px rgba(0,0,0,.1);
 }
@@ -55,7 +60,7 @@ nav img{
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 23%;
+    width: 250px;
 }
 
 .nav-izquierda a{
@@ -78,7 +83,7 @@ nav img{
 .nav-derecha{
     display: flex;
     flex-direction: row;
-    width: 33%;
+    width: 420px;
     justify-content: space-between;
 }
 
@@ -120,13 +125,14 @@ nav img{
 }
 
 .principal-container{
-    padding-left: 18%;
-    padding-right: 18%; 
+    width: 1245px;
+    justify-self: center;
+    padding: 0 1%;
 }
 
 #titulo-container{
     margin: 5vh 0;
-    width: 70vh;
+    width: 750px;
 }
 
 #titulo-container h1{
@@ -149,17 +155,23 @@ nav img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content:flex-start;
 }
 
 .articulo{
-    margin: 3vh 5vh;
-    width: 25%;
+    margin: 40px 0px;
+    width: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+}
+
+.articulo a{
+    width: 300px;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .articulo img{
@@ -167,11 +179,10 @@ nav img{
     width: 180px;
     background-color: #1e3932;
     border-radius: 100px;
-    padding: 1%;
 }
 
 .alimentos-container img {
-    margin-left: 4vh;
+    align-content: center;
 }
 
 .articulo img:hover{
@@ -246,7 +257,7 @@ footer{
     display: flex;
     background-color: white;
     align-items: baseline;
-}
+}   
 
 .iconos li{
     padding:1%;
@@ -303,3 +314,41 @@ footer{
     margin-bottom: 2vh;
 }
 
+/* responsive design */
+
+@media (max-width: 1245px){
+
+    .principal-container{
+        width: 98%;
+        padding: 0 2%;
+    }
+
+    header{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1135px){
+    #titulo-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1125px){
+    .articulo img{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .articulo{
+        margin: 3vh 8vw;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
