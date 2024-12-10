@@ -27,12 +27,15 @@ button{
     padding: 1% 13px;
 }
 
-header {
+header{
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+
+.header-container {
     width: 1245px;
     justify-self: center;
     padding: 0 1%;
     align-items: center; 
-    box-shadow: 0 3px 3px rgba(0,0,0,.1);
 }
 
 nav{
@@ -197,9 +200,13 @@ nav img{
 }
 
 footer{
-    padding-left: 17.5%;
-    padding-right: 17.5%;
     box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+}
+
+.footer-container{
+    width: 1245px;
+    justify-self: center;
+    padding: 0 1%;
 }
 
 .footersuperior{
@@ -207,8 +214,8 @@ footer{
     padding-top: 3vh;
     display: flex;
     flex-direction: row;
-    width: 30%;
-    justify-content: space-between;
+    width: 400px;
+    justify-content:space-between;
 }
 
 .footersuperior a{
@@ -316,22 +323,42 @@ footer{
 
 /* responsive design */
 
+
 @media (max-width: 1245px){
 
     .principal-container{
         width: 98%;
-        padding: 0 2%;
+        padding: 0 1%;
     }
 
-    header{
-        width: 100%;
+    .header-container{
+        width: 98%;
+        padding: 0 1%;
     }
 
+    .footer-container{
+        width:98vw;
+        padding: 0 1vw;
+    }
+
+}
+
+@media (max-width: 1170px){
+    #titulo-container h3{
+        font-size: 1.1em;
+    }
+    #titulo-container h1{
+        font-size: 1.9em;
+    }
 }
 
 @media (max-width: 1135px){
     #titulo-container{
         width: 100%;
+    }
+
+    #titulo-container h1{
+        font-size: 1.8em;
     }
 }
 
@@ -340,15 +367,62 @@ footer{
         height: 150px;
         width: 150px;
     }
+
+    #titulo-container h1{
+        font-size: 1.7em;
+    }
 }
 
 @media (max-width: 768px){
 
     .articulo{
-        margin: 3vh 8vw;
-        width: 240px;
+        margin: 3vh 2vw;
+        width: 44%;
         display: flex;
         flex-direction: column;
     }
-    
+
+    #titulo-container h1{
+        font-size: 1.6em;
+    }
 }
+
+@media (max-width: 480px){
+
+    .articulo img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .articulo{
+        margin: 3vh 8vw;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo-container h1{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 778px){
+
+}
+
+/*
+#titulo-container{
+    margin: 5vh 0;
+    width: 750px;
+}
+
+#titulo-container h1{
+    font-size: 2em;
+}
+
+#titulo-container h1, h3{
+    margin: 0;
+    padding: 0;
+}
+
+*/
