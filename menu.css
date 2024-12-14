@@ -53,6 +53,12 @@ nav img{
     height: 52px;
 }
 
+.contiainer-sidebutton img{
+    width: 52px;
+    height: 52px;
+    padding: 1%;
+}
+
 .nav-izquierda{
     display: flex;
     justify-content: space-between;
@@ -111,6 +117,12 @@ nav img{
 }
 
 #btnUnir button{
+    background: none;
+    display: inline;
+    border-radius: 50px;
+    border: 1px solid;
+    font-weight: 600;
+    padding: 1% 13px;
     background-color: black;
 }
 
@@ -120,11 +132,11 @@ nav img{
 
 #btnUnir a{
     color: white;
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 
 #btnIngresar a{
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 
 .principal-container{
@@ -248,7 +260,7 @@ footer{
 
 .iconos{
     margin-top: 2vh;
-    width: 20%;
+    width: 250px;
     justify-self: center;
     margin-bottom: 4vh;
     height: auto;
@@ -268,7 +280,8 @@ footer{
 
 .iconos li{
     padding:1%;
-    height: 4.3vh;
+    width: auto;
+    height: 40px;
     display: flex;
     align-items: end;
 }
@@ -276,7 +289,9 @@ footer{
 .menufooter{
     height: auto;
     width: 100%;
+
 }
+
 
 .menufooter a{
     font-weight: 300;
@@ -293,6 +308,7 @@ footer{
 
 .menufooter a{
     color: #999;
+    font-size: 20px;
 }
 
 .menufooter a:hover{
@@ -301,6 +317,10 @@ footer{
 
 .menufooter li{
     padding-right: 1%;
+}
+
+.derechos-container{
+    margin-top: 6vh;
 }
 
 #derechosreservados{
@@ -371,7 +391,29 @@ footer{
     #titulo-container h1{
         font-size: 1.7em;
     }
+
+    
 }
+
+@media screen and (min-width: 1125px) {
+    .responsive-accordion {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 1125px) {
+    .footersuperior{
+        display: none;
+    }
+  }
+
+@media (max-width: 865px){
+    .menufooter ul{
+        flex-wrap: wrap; 
+    }
+}
+
+
 
 @media (max-width: 768px){
 
@@ -385,6 +427,18 @@ footer{
     #titulo-container h1{
         font-size: 1.6em;
     }
+
+    #categoria{
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 560px){
+    .articulo, .articulo a{
+        width: 40vw;
+        text-wrap: wrap;
+    }
+
 }
 
 @media (max-width: 480px){
@@ -404,7 +458,62 @@ footer{
     #titulo-container h1{
         font-size: 1.5em;
     }
+
+    .menufooter{
+        height: auto;
+        width: 100%;
+    }
+    
+    #nonresponsive-menufooter{
+        display: none;
+    }
+
+    .iconos{
+        justify-self: flex-start;
+    }
+
+    #responsive-menufooter ul{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-content: flex-start;
+        text-align: left;
+    }
+
+    #responsive-menufooter li{
+        padding: 4.5% 0% 2% 4.5%;
+    }
+
+    #responsive-menufooter a{
+        color: black;
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    #derechosreservados, #permiso{
+        text-align: left;
+        text-wrap: wrap;
+        padding-right: .5vw;
+    }
 }
+
+@media screen and (min-width: 480px) {
+    #responsive-menufooter {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .contiainer-sidebutton {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    nav {
+      display: none;
+    }
+  }
 
 @media (max-width: 778px){
 
