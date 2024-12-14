@@ -537,31 +537,10 @@ footer{
     }
 
     .nav-derecha li{
-        margin-bottom: 3vh;
+        margin-bottom: 2vh;
         margin-left: 3vw;
         justify-content: space-between;
         height: 10vh;
     }
     
   }
-
-@media (max-width: 778px){
-
-}
-
-/*
-#titulo-container{
-    margin: 5vh 0;
-    width: 750px;
-}
-
-#titulo-container h1{
-    font-size: 2em;
-}
-
-#titulo-container h1, h3{
-    margin: 0;
-    padding: 0;
-}
-
-*/

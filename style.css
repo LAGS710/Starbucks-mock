@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body{
+*{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
     letter-spacing: .01em;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-body  ul{
-    list-style: none;
+body{
+    width: 100vw;
 }
 
 body a{
-    text-decoration: none;
     color: black;
 }
 
@@ -21,15 +24,18 @@ button{
     border-radius: 50px;
     border: 1px solid;
     font-weight: 600;
-    padding: 7px 16px;
+    padding: 1% 13px;
 }
 
-header {
-    height: auto; 
-    padding-left: 18%;
-    padding-right: 16%;   
-    align-items: center; 
+header{
     box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+
+.header-container {
+    width: 1245px;
+    justify-self: center;
+    padding: 0 1%;
+    align-items: center; 
 }
 
 nav{
@@ -37,47 +43,71 @@ nav{
     flex-direction: row;
     width: auto;
     align-items: center;
+    height: 9vh;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav img{
-    width: 65px;
-    height: 65px;
+    width: 52px;
+    height: 52px;
 }
 
-header ul{
+.contiainer-sidebutton img{
+    width: 52px;
+    height: 52px;
+    padding: 1%;
+}
+
+.nav-izquierda{
     display: flex;
+    justify-content: space-between;
 }
 
-header li{
-    margin: 20px;
-    font-size: .875rem;
-    letter-spacing: .1em;
-}
-
-ul.nav-derecha {
+.nav-izquierda {
+    display: flex;
     align-items: center;
-    margin-left: 41%;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+}
+
+.nav-izquierda a{
+    justify-self: flex-start;
 }
 
 .nav-izquierda li{
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: .1em;
-    border: 0px;
+    justify-content: space-between;
+    align-content: center;
+    height: 8.9vh;
 }
 
 .nav-izquierda li:hover{
-    border-bottom: #3b806d solid;
-}.nav-izquierda a:hover{
-    color: #3b806d;
+    box-shadow: inset 0 -5px #006341;
 }
 
+.nav-derecha{
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+    justify-content: space-between;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+}
 
 .nav-derecha li{
     font-weight: 600;
+    font-size: 1.11em;
     display: flex;
     letter-spacing: 0;
-    font-size: 1.3em;
     align-items: center;
 }
 
@@ -87,6 +117,12 @@ ul.nav-derecha {
 }
 
 #btnUnir button{
+    background: none;
+    display: inline;
+    border-radius: 50px;
+    border: 1px solid;
+    font-weight: 600;
+    padding: 1% 13px;
     background-color: black;
 }
 
@@ -96,17 +132,19 @@ ul.nav-derecha {
 
 #btnUnir a{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 #btnIngresar a{
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 
+
 .contenido-container{
-    padding-left: 13%;
-    padding-right: 13%; 
+    width: 1400px;
+    justify-self: center;
+    padding: 0 1%;
     display: flex;
     flex-direction: column;
     list-style: bold;
@@ -114,11 +152,11 @@ ul.nav-derecha {
 
 .contenido-container p{
     line-height: 1.75;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    padding: 3%  0 1% 0;
     color: #fff;
-
-
+    width: 70%;
 }
 
 img{
@@ -129,7 +167,7 @@ img{
 h1{
     color: #fff;
     text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 1.9rem;
 }
 
 .carta1{
@@ -145,9 +183,13 @@ h1{
     height: auto;
 }
 
-#contenido1{
+#contenido1, #contenido2 ,#contenido3 ,#contenido4, #contenido5{
     width: 50%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .carta2{
@@ -174,7 +216,6 @@ h1{
     background-color: #d50032;
     width: 100%;
     margin-bottom: 2%;
-
 }
 
 #imagen3{
@@ -229,13 +270,18 @@ h1{
 }
 
 #contenido5 button{
+    margin-top: 3%;
     border-color: white;
+}
+
+.carta1, .carta2, .carta3, .carta4, .carta5{
+    width: 100%;
 }
 
 .containerhorizontal{
     display: flex;
     flex-direction: row;
-    height: auto
+    height: auto;
     margin-bottom: 2%;
 }
 
@@ -249,17 +295,23 @@ h1{
 
 .containerhorizontal p{
     text-align: center;
-    padding:15%;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    width: 45%;
 }
 
 #cartahorizontal{
     height:auto;
     display:flex;
     flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4%;
 }
 
 .containerhorizontalrojo button{
     border-color: #d50032;
+    width: 40px;
 }
 
 .containerhorizontalrojo a{
@@ -287,19 +339,27 @@ h1{
 }
 
 footer{
-    padding-left: 15%;
-    padding-right: 15%;
     box-shadow: 0 -3px 3px rgba(0,0,0,.1);
 }
 
+.footer-container{
+    width: 1245px;
+    justify-self: center;
+    padding: 0 1%;
+}
+
 .footersuperior{
+    margin-top: 4.5vh;
+    padding-top: 3vh;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid rgb(233, 232, 232);
+    width: 400px;
+    justify-content:space-between;
 }
 
 .footersuperior a{
     color: #777;
+    font-weight: 500;
 }
 
 .footersuperior a:hover{
@@ -308,11 +368,16 @@ footer{
 
 .footersuperior h3{
     color: black;
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: 0.01em;
 }
 
-.footersuperior li, h3{
-    padding-bottom: 10%;
+.footersuperior li, .footersuperior h3{
+    padding-bottom: 14%;
+}
+
+.footerinferior{
+    border-top: 1px solid rgb(233, 232, 232);
 }
 
 .iconos img{
@@ -320,23 +385,43 @@ footer{
     width: auto;
 }
 
+.iconos{
+    margin-top: 2vh;
+    width: 250px;
+    justify-self: center;
+    margin-bottom: 4vh;
+    height: auto;
+}
+
 .iconos ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+   display: flex;
+   justify-content: space-between;
+   align-self: end;
 }
 
 .iconos li:hover{
-    padding-top: 8px;
-}
+    display: flex;
+    background-color: white;
+    align-items: baseline;
+}   
 
 .iconos li{
     padding:1%;
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: end;
 }
 
 .menufooter{
     height: auto;
     width: 100%;
+
+}
+
+
+.menufooter a{
+    font-weight: 300;
 }
 .menufooter ul{
     display: flex;
@@ -344,13 +429,13 @@ footer{
     text-align: center;
     color: #999;
     height: 50px;
-    font-size: 1rem;
-    font-weight: 300;   
+    font-size: 1rem; 
     justify-content: center;
 }
 
 .menufooter a{
     color: #999;
+    font-size: 20px;
 }
 
 .menufooter a:hover{
@@ -359,6 +444,10 @@ footer{
 
 .menufooter li{
     padding-right: 1%;
+}
+
+.derechos-container{
+    margin-top: 6vh;
 }
 
 #derechosreservados{
@@ -376,6 +465,201 @@ footer{
     text-align: center;
     font-weight: 300;  
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    margin: 0px;
+    margin-bottom: 2vh;
 }
 
+@media (max-width: 1245px){
+
+    .principal-container{
+        width: 98%;
+        padding: 0 1%;
+    }
+
+    .header-container{
+        width: 98%;
+        padding: 0 1%;
+    }
+
+    .footer-container{
+        width:98vw;
+        padding: 0 1vw;
+    }
+
+}
+
+@media screen and (min-width: 822px) {
+    .contiainer-sidebutton {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 821px) {
+    nav {
+      display: none;
+    }
+    .nav-izquierda li{
+        height: 4vh;
+        margin: 0;
+        padding-left: 4vw;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .nav-izquierda, .nav-derecha{
+        margin-top: 6vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .nav-derecha{
+        margin-bottom: 3vh;
+        justify-content: space-between;
+        height: 10vh;
+    }
+
+    .nav-derecha li{
+        margin-bottom: 3vh;
+        margin-left: 3vw;
+        justify-content: space-between;
+        height: 5vh;
+    }
+    
+  }
+
+
+@media (max-width: 1600px){
+    .header-container{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 1400px){
+    .contenido-container{
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1125px) {
+    .responsive-accordion {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 1125px) {
+    .footersuperior{
+        display: none;
+    }
+
+    .responsive-accordion{
+        width: 50vw;
+    }
+  }
+
+@media (max-width: 955px){
+    .contenido-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carta1,.carta2,.carta3,.carta4,.carta5{
+        flex-direction: column;
+        width: 100vw;
+        padding-bottom: 8%;
+    }
+
+    .carta1 img, .carta2 img, .carta3 img, .carta4 img , .carta5 img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .containerhorizontal{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    #espacio{
+        height: 15px;
+    }
+
+    #contenido1, #contenido2, #contenido3, #contenido4, #contenido5{
+        width: 100vw;
+    }
+
+    .contenido-container p{
+        width: 80%;
+    }
+
+    .contenido-container h1{
+        padding-top: 5%;
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 1400px){
+    .menufooter ul{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px){
+
+    .menufooter{
+        height: auto;
+        width: 100%;
+    }
+    
+    #nonresponsive-menufooter{
+        display: none;
+    }
+
+    .iconos{
+        justify-self: flex-start;
+    }
+
+    #responsive-menufooter ul{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-content: flex-start;
+        text-align: left;
+    }
+
+    #responsive-menufooter li{
+        padding: 4.5% 0% 2% 4.5%;
+    }
+
+    #responsive-menufooter a{
+        color: black;
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    #derechosreservados, #permiso{
+        text-align: left;
+        text-wrap: wrap;
+        padding-right: .5vw;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #responsive-menufooter {
+      display: none;
+    }
+
+    h1{
+        font-size: 1.4rem;
+    }
+
+    .contenido-container p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .contiainer-sidebutton {
+      display: none;
+    }
+  }
