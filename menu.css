@@ -513,6 +513,36 @@ footer{
     nav {
       display: none;
     }
+
+    .nav-izquierda li{
+        height: 4vh;
+        margin: 0;
+        padding-left: 4vw;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .nav-izquierda, .nav-derecha{
+        margin-top: 6vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .nav-derecha{
+        margin-bottom: 3vh;
+        justify-content: space-between;
+        height: 10vh;
+    }
+
+    .nav-derecha li{
+        margin-bottom: 3vh;
+        margin-left: 3vw;
+        justify-content: space-between;
+        height: 10vh;
+    }
+    
   }
 
 @media (max-width: 778px){
