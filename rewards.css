@@ -20,7 +20,7 @@ button{
     border-radius: 50px;
     border: 1px solid;
     font-weight: 600;
-    padding: 5px 10px;
+    padding: 1% 13px;
 }
 
 html{
@@ -41,22 +41,30 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
     font-weight: 700;
     font-size: 13px;
+    background-color: white;
 }
 
 button a{
     font-size: 14px;
 }
 
+nav{
+    width: 1250px;
+    align-items: center;
+    justify-self: center;
+    z-index: 2;
+}
+
 .container-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 17.5%;
-    padding-right: 17.5%;
     height: 100px;
+    width: auto;
+    z-index: 2;
+
 }
 
 .nav-izquierda img{
@@ -133,6 +141,7 @@ button a{
 }
 
 .container-main{
+    width: 100%;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
@@ -140,12 +149,11 @@ button a{
 
 .container-fixed{
     padding-top: 16%;
-    width: 42%;
+    width: 42vw;
     position: fixed;
     height: 100vh;
     justify-items: center;
     color: white;
-    font-size: 45px;
     background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);background-size: contain;
 }   
 
@@ -160,12 +168,11 @@ button a{
     text-align: center;
 }
 
-.container-mano img{
-    height: auto;
-    width: 43%;
-    object-fit: cover;
+#mano{
     position: absolute;
-    bottom: 100px;
+    width: 35%;
+    height: auto;
+    bottom: 0;
     right: 0;
 }
 
@@ -191,13 +198,8 @@ button a{
 }
 
 .container-scroll{
-    width: 58%;
+    width: 58vw;
     margin-left: 42%;
-}
-
-.container-scroll section{
-    width: 100%;
-    text-align: center;
 }
 
 #titulo{
@@ -217,13 +219,12 @@ button a{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 25%;
     margin: 0 10px;
 }
 
 .imagenes-section img{
     height: auto;
-    width: 200px;
+    width: 100%;
     padding: 10px;
 }
 
@@ -233,17 +234,21 @@ button a{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    width: 25%;
 }
 
 .container-rewards{
-    padding: 5% 14%;
+    padding: 5%;
     display: flex;
     flex-direction: row;
 }
 
 .container-redimir{
     background: rgb(241, 240, 235);
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-redimir #titulo{
@@ -279,16 +284,17 @@ button a{
 }
 
 .flex-estrellas div{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: white;
     background-color: #025034;
     border-radius: 30px;
+    padding-left: 9px;
     width:30px;
     height:30px;
     position: relative;
     top: 30px;
-    left: -18px;
+    left: -15px;
     align-items: center;
     z-index: -1;
 }
@@ -335,7 +341,7 @@ button a{
 }
 
 #container-chica img{
-    width: 350px;
+    width: 100%;
     height: auto;
 }
 
@@ -430,6 +436,7 @@ button a{
     padding: 4% 5%;
 }
 
+
 .container-aplicacion p{
     text-align: center;
     margin: 0;
@@ -451,9 +458,16 @@ button a{
     margin: 4% 2.5%;
 }
 
-#app-img{
+.container-appstores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-appstores img{
+    height: 40px;
     width: auto;
-    height: 48px;
 }
 
 .container-conocemas{
@@ -585,3 +599,271 @@ footer{
     font-weight: 300;  
     margin-top: 20px;
 }
+
+/* responsive design */
+
+@media (max-width: 1250px){
+    .container-nav{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px){
+
+    
+
+    .container-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-fixed{
+        position: static;
+        width: 100vw;
+    }
+    .container-scroll{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .container-rewards{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contiainer-sidebutton {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    nav {
+      display: none;
+    }
+
+    .container-main{
+        z-index: -5;
+    }
+
+    .container-mano{
+        height: 300px;
+    }
+
+    .container-main{
+        margin-top: 8%;
+    }
+
+    .contiainer-sidebutton{
+        position: fixed;
+        width: 100vw;
+        padding: 1% 2%;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .container-fixed{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        width: auto;
+        padding-top: 2vh;
+        top: 13px;
+        z-index: -3;
+    }
+
+    .fixed-buttons{
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fixed-buttons button{
+        padding: .5vh 0;
+        margin: .5vh;
+        width: 100%;
+    }
+
+    .fixed-buttons a{
+        padding: 0;
+        margin: 0;
+        height: 5px;
+    }
+
+    .contiainer-sidebutton img{
+        height: 50px;
+        width: auto;
+        padding-left: 1%;
+    }
+
+    .nav-izquierda li{
+        height: 4vh;
+        margin: 0;
+        padding-left: 4vw;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .nav-izquierda, .nav-derecha{
+        margin-top: 6vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .nav-derecha{
+        margin-bottom: 3vh;
+        justify-content: space-between;
+        height: 10vh;
+    }
+
+    .nav-derecha li{
+        margin-bottom: 2vh;
+        margin-left: 3vw;
+        justify-content: space-between;
+    }
+
+    .imagenes-section{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        width: 98vw;
+    }
+
+    .imagenes-section p{
+        text-align: center;
+    }
+
+    .container-subsection{
+        width: 50%;
+    }
+    
+    .container-video{
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-estrellas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-pago{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flex-section{
+        margin-top: 1vh;
+    }
+
+    #flex-section img{
+        height: 100px;
+    }
+    
+    .container-pagoinferior{
+        flex-direction: column;
+    }
+
+    .container-aplicacion h3, .container-aplicacion h6{
+        text-align: center;
+    }
+
+    .container-appstores{
+        flex-direction: column;
+    }
+
+    .container-aplicacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-conocemas{
+        flex-direction: column;
+    }
+
+    .starbucks-imagen img {
+        height: auto;
+        width: 100vw;
+    }
+
+    #nonresponsive-menufooter{
+        display: none;
+    }
+
+    .iconos{
+        justify-self: flex-start;
+    }
+
+    #responsive-menufooter ul{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-content: flex-start;
+        text-align: left;
+    }
+
+    #responsive-menufooter li{
+        padding: 4.5% 0% 2% 4.5%;
+    }
+
+    #responsive-menufooter a{
+        color: black;
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button-container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-redimir img{
+        width: 100%;
+    }
+
+  }
+
+  @media screen and (min-width: 1000px) {
+    #responsive-menufooter {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container-subsection{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .imagenes-section img{
+        height: auto;
+        width: 90%;
+    }
+
+    .container-redimir img{
+        width: 100%;
+    }
+}
+

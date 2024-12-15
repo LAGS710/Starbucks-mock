@@ -4,45 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rewards</title>
+    <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="rewards.css">
     <link rel="shortcut icon" href="https://th.bing.com/th/id/R.b1cd714add5635c5b5b46cc4435508cb?rik=cdJBEemIaBUFog&pid=ImgRaw&r=0" type="image/x-icon">
 </head> 
 <body>
     <section id="header1">
         <header>
-            <nav class="container-nav">
+            <nav>
+                <section class="container-nav">
+                    <ul class="nav-izquierda">
+                        <a href="https://www.starbucks.com.mx/"><img src="https://cdn-icons-png.flaticon.com/128/5977/5977591.png" alt="Starbucks logo"></a>
+                        <li><a href="https://www.starbucks.com.mx/menu">MENÚ</a></li>
+                        <li id="nav-rewards"><a href="rewards.html">REWARDS</a></li>
+                    </ul>
+        
+                    <section class="nav-derecha">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3179/3179068.png" alt="Location Logo"><a href="https://www.starbucks.com.mx/stores">LOCALIZA TU TIENDA</a>
+                        <ul>
+                            <li id="btnIngresar"><button><a href="https://www.starbucks.com.mx/stores">Inicia Sesión</a></button></li>
+                            <li id="btnUnir"><button><a href="https://rewards.starbucks.mx/register">Únete Ahora</a></button></li>
+                        </ul>
+                    </section> 
+                </section>
+            </nav>
+            <div  class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;width:90%;right:0;" id="rightMenu">
+                <button onclick="closeRightMenu()" width = "100%" class="w3-bar-item w3-button w3-large">Cerrar &times;</button>
                 <ul class="nav-izquierda">
-                    <a href="https://www.starbucks.com.mx/"><img src="https://cdn-icons-png.flaticon.com/128/5977/5977591.png" alt="Starbucks logo"></a>
-                    <li><a href="https://www.starbucks.com.mx/menu">MENÚ</a></li>
-                    <li id="nav-rewards"><a href="rewards.html">REWARDS</a></li>
+                    <li><a href="menu.html">MENÚ</a></li>
+                    <li><a href="rewards.html">REWARDS</a></li>
                 </ul>
     
-            <section class="nav-derecha">
-                <img src="https://cdn-icons-png.flaticon.com/128/3179/3179068.png" alt="Location Logo"><a href="https://www.starbucks.com.mx/stores">LOCALIZA TU TIENDA</a>
-                <ul>
-                    <li id="btnIngresar"><button><a href="https://www.starbucks.com.mx/stores">Inicia Sesión</a></button></li>
-                    <li id="btnUnir"><button><a href="https://rewards.starbucks.mx/register">Únete Ahora</a></button></li>
+                <ul class="nav-derecha">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/3179/3179068.png" alt="Location Logo"><a href="https://www.starbucks.com.mx/stores">Localizar Tienda</a></li>
+                    <section class="button-container">
+                        <li id="btnIngresar"><button><a href="https://www.starbucks.com.mx/stores">Ingresar</a></button></li>
+                        <li id="btnUnir"><button><a href="https://rewards.starbucks.mx/register">Únete</a></button></li>
+                    </section>
                 </ul>
+            </div>
+            <section class = "contiainer-sidebutton">
+                <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/5977/5977591.png" alt="Starbucks logo"></a>
+                <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+                <div class="w3-container">
             </section>
-            </nav>
         </header>
     </section>
 
     <section id="main">
         <section class="container-main">
             <section class="container-fixed">
+                <img src="https://i.ibb.co/vv8RKKF/bg-section-left-hand-0d6943f4dd00e30428d035564a73c510.png" id="mano" alt="bg-section-left-hand-0d6943f4dd00e30428d035564a73c510">
                 <section id="imagen-fixed">
                     <img src="https://i.ibb.co/yQ5VN4m/title2.png" a>     
                 </section>
                 <section>
                     <p id="fixedtexto">Holaaaaa, café gratis</p>
                 </section>
-                <section>
+                <section class="fixed-buttons">
                     <button id="fixedbuttonInicia"><a href="https://rewards.starbucks.mx/login">Inicia Sesión</a></button>
                     <button id="fixedbuttonUnir"><a href="https://rewards.starbucks.mx/register">Únete Ahora</a></button>
-                </section>
-                <section class="container-mano">
-                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/vv8RKKF/bg-section-left-hand-0d6943f4dd00e30428d035564a73c510.png" alt="bg-section-left-hand-0d6943f4dd00e30428d035564a73c510">
                 </section>
             </section>
             <section class="container-scroll">
@@ -172,7 +193,7 @@
                     </section>
                     <section class="flex-pago">
                         <section id="flex-section">
-                            <img src="https://i.ibb.co/xLbbcy4/estrella.png" alt="estrella">
+                            <img src="https://i.ibb.co/xLbbcy4/estrella.png" id="estrella" alt="estrella">
                             <p>1 estrella por cada $20</p>
                         </section>
                         <section id="flex-section">
@@ -186,7 +207,7 @@
                     </section>    
                     <section class="flex-pago">
                         <section id="flex-section">
-                            <img src="https://i.ibb.co/xLbbcy4/estrella.png" alt="estrella">
+                            <img src="https://i.ibb.co/xLbbcy4/estrella.png" id="estrella" alt="estrella">
                             <p>1 estrella por cada $10</p>
                         </section>
                         <section id="flex-section">
@@ -224,9 +245,9 @@
                         <p>contacto, cada que vengas paga con ella, acumula estrellas</p>
                         <p>y obtén recompensas.</p>
                     </section>
-                    <section>
-                        <img src="https://i.ibb.co/w01xx56/4fe2e05c02a54cec809c3926b2fc1f23.png" alt="4fe2e05c02a54cec809c3926b2fc1f23">
-                        <img src="https://i.ibb.co/LYQ9SZN/F9-E95-B11-CA554-D399139-CE1-BEDC36-A10.png" alt="F9-E95-B11-CA554-D399139-CE1-BEDC36-A10">
+                    <section class="container-appstores">
+                        <img id="#app-img" src="https://i.ibb.co/w01xx56/4fe2e05c02a54cec809c3926b2fc1f23.png" alt="4fe2e05c02a54cec809c3926b2fc1f23">
+                        <img id="#app-img" src="https://i.ibb.co/LYQ9SZN/F9-E95-B11-CA554-D399139-CE1-BEDC36-A10.png" alt="F9-E95-B11-CA554-D399139-CE1-BEDC36-A10">
                     </section>
                     <section>
                         <h6>¡Tus cafés se convierten en estrellas y recompensas increíbles!</h6>
@@ -261,6 +282,22 @@
                             <li><a href="https://www.starbucks.com.mx/seccion/experiencia-starbucks">Formas de comprar</a></li>
                         </ul>
                     </section>
+                    <section class="responsive-accordion">
+                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-white w3-left-align"><h3>Sobre Nosotros</h3></button>
+                            
+                            <div id="Demo1" class="w3-hide">
+                              <a class="w3-button w3-block w3-left-align" href="https://www.starbucks.com.mx/seccion/trabaja-con-nosotros">Trabaja con nosotros</a>
+                              <a class="w3-button w3-block w3-left-align" href="Formas de comprar">Historias Starbucks</a>
+                            </div>
+                            
+                            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-white w3-left-align"><h3>Atención al cliente</h3></button>
+                            
+                            <div id="Demo2" class="w3-hide">
+                              <a class="w3-button w3-block w3-left-align" href="Formas de comprar">Contáctanos</a>
+                              <a class="w3-button w3-block w3-left-align" href="https://alsea.interfactura.com/RegistroDocumento.aspx?opc=Starbucks">Facturas Electrónicas</a>
+                              <a class="w3-button w3-block w3-left-align" href="https://www.starbucks.com.mx/seccion/experiencia-starbucks">Formas de comprar</a>
+                            </div>
+                    </section>
                     <section class="footerinferior">
                         <section class="iconos">
                             <ul>
@@ -269,26 +306,47 @@
                                 <li><a href="https://twitter.com/StarbucksMex"><img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="icono x"></a></li>
                                 <li><a href="https://www.youtube.com/user/StarbucksMexico?app=desktop"><img src="https://cdn-icons-png.flaticon.com/128/4401/4401475.png" alt="icono youtube"></a></li>
                             </ul>
-                        <section class="menufooter">
-                            <ul>
-                                <li><a href="https://www.starbucks.com.mx/articulo/accesibilidad-web">Accesibilidad Web</a></li>
-                                <li>|</li>
-                                <li><a href="https://www.starbucks.com.mx/articulo/aviso-de-privacidad">Aviso de Privacidad</a></li>
-                                <li>|</li>
-                                <li><a href="https://www.starbucks.com.mx/seccion/boletines">Boletines</a></li>
-                                <li>|</li>
-                                <li><a href="https://www.starbucks.com.mx/articulo/condiciones-de-uso-1">Condiciones de uso</a></li>
-                                <li>|</li>
-                                <li><a href="Condiciones de uso">Mapa del sitio</a></li>
-                                <li>|</li>
-                                <li><a href="https://www.starbucks.com.mx/articulo/preferencias-sobre-cookie">Preferencias sobre cookies</a></li>
-                            </ul>
-                            <p id="derechosreservados">&copy;2022. Starbucks Cofee Company. Reservados todos los derechos</p>
-                        </section>
-            
+                            <section class="menufooter">
+                                <ul id="nonresponsive-menufooter">
+                                    <li><a href="https://www.starbucks.com.mx/articulo/accesibilidad-web">Accesibilidad Web |</a></li>
+                                    <li><a href="https://www.starbucks.com.mx/articulo/aviso-de-privacidad">Aviso de Privacidad |</a></li>
+                                    <li><a href="https://www.starbucks.com.mx/seccion/boletines">Boletines |</a></li>
+                                    <li><a href="https://www.starbucks.com.mx/articulo/condiciones-de-uso-1">Condiciones de uso |</a></li>
+                                    <li><a href="Condiciones de uso">Mapa del sitio |</a></li>
+                                    <li><a href="https://www.starbucks.com.mx/articulo/preferencias-sobre-cookie">Preferencias sobre cookies</a></li>
+                                </ul>
+                                <section id="responsive-menufooter">
+                                    <ul >
+                                        <li><a href="https://www.starbucks.com.mx/articulo/accesibilidad-web">Accesibilidad Web</a></li>
+                                        <li><a href="https://www.starbucks.com.mx/articulo/aviso-de-privacidad">Aviso de Privacidad</a></li>
+                                        <li><a href="https://www.starbucks.com.mx/seccion/boletines">Boletines</a></li>
+                                        <li><a href="https://www.starbucks.com.mx/articulo/condiciones-de-uso-1">Condiciones de uso</a></li>
+                                        <li><a href="Condiciones de uso">Mapa del sitio</a></li>
+                                        <li><a href="https://www.starbucks.com.mx/articulo/preferencias-sobre-cookie">Preferencias sobre cookies</a></li>
+                                    </ul>
+                                </section>
+                            <p id="derechosreservados">&copy;2022. Starbucks Cofee Company. Reservados todos los derechos</p>      
                         </section>
                     </section>
                 </footer>
+                <script>
+                    function openRightMenu() {
+                        document.getElementById("rightMenu").style.display = "block";
+                    }
+                  
+                    function closeRightMenu() {
+                        document.getElementById("rightMenu").style.display = "none";
+                    }
+            
+                    function myFunction(id) {
+                        var x = document.getElementById(id);
+                        if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                        } else { 
+                        x.className = x.className.replace(" w3-show", "");
+                        }
+                    }
+                </script>
             </section>
         </section>
     </section>
