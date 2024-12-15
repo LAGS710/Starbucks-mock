@@ -28,7 +28,26 @@
                     </section> 
                 </section>
             </nav>
-
+            <div  class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;width:90%;right:0;" id="rightMenu">
+                <button onclick="closeRightMenu()" width = "100%" class="w3-bar-item w3-button w3-large">Cerrar &times;</button>
+                <ul class="nav-izquierda">
+                    <li><a href="menu.html">MENÚ</a></li>
+                    <li><a href="rewards.html">REWARDS</a></li>
+                </ul>
+    
+                <ul class="nav-derecha">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/3179/3179068.png" alt="Location Logo"><a href="https://www.starbucks.com.mx/stores">Localizar Tienda</a></li>
+                    <section class="button-container">
+                        <button id="fixedbuttonInicia"><a href="login.html">Inicia Sesión</a></button>
+                        <button id="fixedbuttonUnir"><a href="registro.html">Únete Ahora</a></button>
+                    </section>
+                </ul>
+            </div>
+            <section class = "contiainer-sidebutton">
+                <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/5977/5977591.png" alt="Starbucks logo"></a>
+                <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+                <div class="w3-container">
+            </section>
         </header>
     </section>
 
@@ -39,13 +58,15 @@
                 <section id="imagen-fixed">
                     <img src="https://i.ibb.co/yQ5VN4m/title2.png" a>     
                 </section>
+                
                 <section>
                     <p id="fixedtexto">Holaaaaa, café gratis</p>
                 </section>
                 <section class="fixed-buttons">
                     <button id="fixedbuttonInicia"><a href="login.html">Inicia Sesión</a></button>
-                    <button id="fixedbuttonUnir"><a href="https://rewards.starbucks.mx/register">Únete Ahora</a></button>
+                    <button id="fixedbuttonUnir"><a href="registro.html">Únete Ahora</a></button>
                 </section>
+                
             </section>
             <section class="container-scroll">
                 <section class="container-rewards">

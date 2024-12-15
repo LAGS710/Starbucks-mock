@@ -434,6 +434,10 @@ nav{
 
 .container-aplicacion{
     padding: 4% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -508,8 +512,8 @@ nav{
 }
 
 .starbucks-imagen img{
-    height: 230px;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 #header1{
@@ -639,15 +643,34 @@ footer{
     .contiainer-sidebutton {
       display: none;
     }
-  }
+
+    #responsive-menufooter{
+        display: none;
+    }
+
+    .container-scroll{
+        background-color: blue;
+    }
+
+    .responsive-accordion{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     nav {
       display: none;
     }
 
+    .footersuperior{
+        display: none;
+    }
+
+    #nonresponsive-menufooter{
+        display: none;
+    }
+
     .container-main{
-        z-index: -5;
     }
 
     .container-mano{
@@ -661,9 +684,10 @@ footer{
     .contiainer-sidebutton{
         position: fixed;
         width: 100vw;
+        top: 0;
         padding: 1% 2%;
+        z-index: 3;
         background-color: white;
-        z-index: 1;
     }
 
     .container-fixed{
@@ -799,9 +823,7 @@ footer{
         width: 100vw;
     }
 
-    #nonresponsive-menufooter{
-        display: none;
-    }
+
 
     .iconos{
         justify-self: flex-start;
@@ -841,11 +863,6 @@ footer{
 
   }
 
-  @media screen and (min-width: 1000px) {
-    #responsive-menufooter {
-      display: none;
-    }
-}
 
 @media screen and (max-width: 600px) {
 
